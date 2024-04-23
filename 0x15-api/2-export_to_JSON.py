@@ -4,9 +4,9 @@ Script to retrieve TODO list progress of an employee from a given REST API
 and export the data in JSON format.
 """
 
-import sys
-import requests
 import json
+import requests
+import sys
 
 def get_employee_todo_progress(employee_id):
     """
