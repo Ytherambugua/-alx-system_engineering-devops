@@ -6,6 +6,7 @@ Script to retrieve TODO list progress of an employee from a given REST API.
 import requests
 import sys
 
+
 def get_employee_todo_progress(employee_id):
     """
     Retrieves and displays the TODO list progress of a given employee.
@@ -32,6 +33,7 @@ def get_employee_todo_progress(employee_id):
     except requests.exceptions.RequestException as e:
         print(f"Error: {e}")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
